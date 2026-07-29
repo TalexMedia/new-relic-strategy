@@ -105,6 +105,14 @@ body{background:var(--bg);min-height:100vh}
 .idea-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;color:var(--txt);letter-spacing:0.02em;margin-bottom:6px;line-height:1.35}
 .idea-desc{font-size:13.5px;color:var(--txt2);line-height:1.7}
 .idea-desc em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.idea-scale{display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px}
+.why-block{margin-top:0.95rem;padding-top:0.9rem;border-top:1px solid var(--border)}
+.why-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--o);margin-bottom:0.65rem}
+.why-list{display:flex;flex-direction:column;gap:0.55rem}
+.why-item{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--txt2);line-height:1.5}
+.why-item strong{color:var(--txt);font-weight:600}
+.why-icon{flex-shrink:0;width:16px;height:16px;margin-top:1px}
+.why-icon svg{width:16px;height:16px;display:block;stroke:var(--o);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .idea-tag{margin-top:10px;font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:0.12em;color:var(--o);text-transform:uppercase;font-weight:600}
 .idea-tag a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--o)}
 .idea-tag a:hover{border-bottom-style:solid}
@@ -317,8 +325,8 @@ body{background:var(--bg);min-height:100vh}
       </a>
       <a class="wi-card" href="#sec-worlds">
         <div class="wi-num">02</div>
-        <div class="wi-title">Three Concepts For New Relic</div>
-        <div class="wi-desc">Three long-form concepts we'd start with</div>
+        <div class="wi-title">Three Ways In</div>
+        <div class="wi-desc">A flagship series, a customer film, and a simple place to start</div>
       </a>
       <a class="wi-card" href="#sec-strategy">
         <div class="wi-num">03</div>
@@ -420,8 +428,8 @@ body{background:var(--bg);min-height:100vh}
       <span class="sec-pill-orange">02</span>
       <span class="section-eyebrow">Three Concepts For New Relic</span>
     </div>
-    <h2 class="section-title">Three Long-Form Concepts We'd Start With</h2>
-    <p class="section-subtitle">Each one builds on ground New Relic has already earned. Each one follows people, not product.</p>
+    <h2 class="section-title">Three Ways In, At Three Scales</h2>
+    <p class="section-subtitle">One flagship series, one customer film, and one simple place to start. We film and produce at every level, so where you start is up to you.</p>
   </div>
 
   <div class="ideas-grid">
@@ -429,24 +437,51 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card idea-card-featured">
       <div class="idea-num">01</div>
       <div class="idea-body">
+        <div class="idea-scale">The Series · Flagship, ongoing</div>
         <div class="idea-title">"On Call"</div>
-        <div class="idea-desc">Somewhere right now an engineer is having dinner with a laptop open next to the plate. A dashboard is green. Then it isn't. A page goes off, and the next hour decides whether millions of people notice.<br/><br/>The show embeds with the on-call engineer at one New Relic customer through a real stretch of the job: the quiet, the alert, the scramble, the fix, the postmortem the next morning. It's a documentary about the people who keep the software everyone uses from going down, and New Relic is the tool in their hands and the expert voice in the room, not the subject of the film.<br/><br/>You meet the engineer before the pager goes off. You watch the graph turn red. You're in the room at 2am while they trace it, and you stay for the quiet win when the numbers come back.<br/><br/>Drive to Survive made millions of people who had never watched a race care about Formula 1 by following the drivers and the pit crews instead of the cars. Same move here. You already publish the Domino's story in writing, where the SRE team runs golden signals and error budgets to keep pizza ordering fast. This puts that kind of story on film and follows the people instead of the platform.</div>
+        <div class="idea-desc">Somewhere right now an engineer is having dinner with a laptop open next to the plate. A dashboard is green. Then it isn't. A page goes off, and the next hour decides whether millions of people notice.<br/><br/><em>On Call</em> embeds with the on-call engineer at one New Relic customer through a real stretch of the job: the quiet, the alert, the scramble, the fix, the postmortem the next morning. It's a documentary about the people who keep the software everyone uses from going down, and New Relic is the tool in their hands and the expert voice in the room, not the subject of the film.<br/><br/>You meet the engineer before the pager goes off. You watch the graph turn red. You're in the room at 2am while they trace it, and you stay for the quiet win when the numbers come back.<br/><br/><em>Drive to Survive (the Netflix series that made millions of people who'd never watched a race care about Formula 1 by following the drivers and the pit crews, not the cars)</em> is the same move. The engineers were always the story and the platform never was, and this keeps the camera on them.</div>
+        <div class="why-block">
+          <div class="why-label">Why long-form episodic content wins long-term</div>
+          <div class="why-list">
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><span><strong>One-off videos get forgotten.</strong> A returning series is what people come back for.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><span>Trust is built in <strong>small moments repeated over time</strong>, and each episode is one more.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span>A feature list tells people what the platform does. <strong>An engineer who trusts it at 2am</strong> is what makes them believe it.</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="idea-card">
       <div class="idea-num">02</div>
       <div class="idea-body">
-        <div class="idea-title">"The Next Great Thing"</div>
-        <div class="idea-desc">New Relic just launched New Relic for Startups. Somewhere in that program is a founder with four engineers, a demo that works on a good day, and a first thousand users about to show up all at once.<br/><br/>This is a series that follows early builders making something from nothing. Each season tracks a handful of startups through the messy middle: the first real outage, the first scaling wall, the night the thing almost falls over and doesn't. New Relic sits in the background as what they lean on to see what's happening, a supporting character in someone else's origin story.<br/><br/>You find them before anyone's heard the name. You catch the first real spike of traffic as it hits. And you stay for the moment they realize the thing they built actually holds.<br/><br/>Think of the founder episodes of Shark Tank, but instead of ending at the pitch we stay for the build, the part where the idea meets real users and real load. Your own mission is to free developers to build the next great thing. This is the camera pointed at them doing it.</div>
+        <div class="idea-scale">A Single Film · one-time</div>
+        <div class="idea-title">"Kept Running"</div>
+        <div class="idea-desc">There's no video anywhere on newrelic.com, and yet you're already sitting on one of the best stories in the business. You tell it in writing: the Domino's engineering team running golden signals and error budgets so that on the busiest pizza night of the year, the order button just works. Right now it's a case study people read, not a film they watch.<br/><br/><em>Kept Running</em> is one film rather than a series, three to five minutes, made for the homepage and the sales team. It's a single customer hero film built around one team keeping a service millions of people use from going down, with New Relic as the tool in their hands and the expert voice in the room, never the subject. One story, told all the way through, on camera.<br/><br/>A prospect lands on the site trying to decide whether observability is worth it. A few minutes later they've watched a real team survive the night that would have taken them down, and the value isn't a claim anymore, it's something they saw.<br/><br/>It's also the cleanest single project to start with. One customer, one shoot, one finished film that turns your strongest written case study into something people actually watch, and it gives the series above its first real proof of concept.</div>
+        <div class="why-block">
+          <div class="why-label">Why one film is worth making on its own</div>
+          <div class="why-list">
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span>It's <strong>one project with one deadline</strong>, which makes it the easiest way to see how we work.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><span>Legendeering <strong>leads with story</strong>, because a proof point lands harder when you watch it happen than when you read it.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span><span>It fills the <strong>single most-missing asset on the site</strong>, one real customer story on film instead of in writing.</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="idea-card">
       <div class="idea-num">03</div>
       <div class="idea-body">
+        <div class="idea-scale">The Explainer · simple, fast to start</div>
         <div class="idea-title">"Postmortem"</div>
-        <div class="idea-desc">Every engineer has a folder of war stories. The outage that took checkout down on the biggest sales day of the year. The one-line change that cascaded. The alert nobody was watching.<br/><br/>Each episode rebuilds a real engineering failure minute by minute and pulls out what every viewer should take from it. Some reconstruct famous public outages. Others walk an anonymized incident with the team that lived it. A New Relic expert guides each one, and there is nothing to buy at the end. It's value, given away.<br/><br/>You watch the timeline tighten. You see the exact moment it could have been caught. And you leave with something you can use on your own systems on Monday.<br/><br/>Air Disasters took plane crashes and turned the investigation into television people cannot look away from, because the stakes are real and the lesson is earned. Software has the same drama and almost none of it on film. This is that format for the people who keep systems running.</div>
+        <div class="idea-desc">Every engineer has a folder of war stories. The outage that took checkout down on the biggest sales day of the year. The one-line change that cascaded. The alert nobody was watching.<br/><br/><em>Postmortem</em> rebuilds a real engineering failure minute by minute and pulls out what every viewer should take from it. Some episodes reconstruct famous public outages. Others walk an anonymized incident with the team that lived it. A New Relic expert guides each one, and there's nothing to buy at the end. It's value, given away.<br/><br/>You watch the timeline tighten. You see the exact moment it could have been caught. And you leave with something you can use on your own systems on Monday.<br/><br/><em>Air Disasters (the Smithsonian Channel series that rebuilds real plane crashes minute by minute until you understand exactly what went wrong)</em> turned investigation into television people can't look away from, because the stakes are real and the lesson is earned. Software has the same drama and almost none of it on film, and this is that format for the people who keep systems running.</div>
+        <div class="why-block">
+          <div class="why-label">Why this is the simplest place to start</div>
+          <div class="why-list">
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span>Your engineers <strong>already write these postmortems</strong>, so the raw material is already there.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Each episode is <strong>short and repeatable</strong>, the lowest-cost way to build a video habit.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><span>It's <strong>value given away</strong>, the fastest way to earn trust from engineers who aren't customers yet.</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
