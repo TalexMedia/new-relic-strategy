@@ -113,6 +113,24 @@ body{background:var(--bg);min-height:100vh}
 .why-item strong{color:var(--txt);font-weight:600}
 .why-icon{flex-shrink:0;width:16px;height:16px;margin-top:1px}
 .why-icon svg{width:16px;height:16px;display:block;stroke:var(--o);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dir-list{list-style:none;padding:0;margin:0.6rem 0 1rem;display:flex;flex-direction:column;gap:0.65rem}
+.dir-item{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.7;color:var(--txt2)}
+.dir-item strong{color:var(--txt);font-weight:500}
+.dir-icon{flex-shrink:0;width:17px;height:17px;margin-top:3px}
+.dir-icon svg{width:17px;height:17px;display:block;stroke:var(--o);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.cs-video-embed{margin-top:1.25rem;position:relative;width:100%;aspect-ratio:16/9;background:#0F0E0D;border:1px solid rgba(255,255,255,0.08);border-radius:8px;overflow:hidden}
+.cs-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.byline-imdb{flex-shrink:0;display:inline-flex;align-items:center;text-decoration:none;transition:transform 0.15s ease}
+.byline-imdb:hover{transform:translateY(-1px)}
+.byline-imdb img{height:22px;width:auto;display:block;border-radius:3px}
+.trust-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:1.6rem;padding:1.15rem 0 0.35rem}
+.trust-logo{width:auto;object-fit:contain;display:block;opacity:0.9}
+.trust-logo.discovery{height:22px}
+.trust-logo.nbc{height:15px}
+.trust-logo.bbc{height:24px}
+.trust-emmy{display:inline-flex;flex-direction:column;align-items:center;line-height:1.1;text-align:center}
+.trust-emmy .n{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.03em;color:var(--o);line-height:1}
+.trust-emmy .t{font-family:'Oswald',sans-serif;font-size:8px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:var(--txt3);margin-top:1px}
 .idea-tag{margin-top:10px;font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:0.12em;color:var(--o);text-transform:uppercase;font-weight:600}
 .idea-tag a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--o)}
 .idea-tag a:hover{border-bottom-style:solid}
@@ -306,6 +324,17 @@ body{background:var(--bg);min-height:100vh}
       <div class="byline-name">Prepared by Tom Langan · Founder, Talex Media</div>
       <div class="byline-sub">Author of <em>Legendeering</em></div>
     </div>
+    <a class="byline-imdb" href="https://www.imdb.com/name/nm5209355/" target="_blank" rel="noopener" aria-label="Tom Langan on IMDb">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb"/>
+    </a>
+  </div>
+
+  <!-- Broadcaster trust strip, below the byline -->
+  <div class="trust-strip">
+    <img class="trust-logo discovery" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Discovery_Channel_-_Logo_2019.svg" alt="Discovery"/>
+    <img class="trust-logo nbc" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/NBCUniversal_Logo.svg" alt="NBCUniversal"/>
+    <img class="trust-logo bbc" src="https://upload.wikimedia.org/wikipedia/commons/4/41/BBC_Logo_2021.svg" alt="BBC"/>
+    <span class="trust-emmy"><span class="n">2×</span><span class="t">Emmy Award Nominee</span></span>
   </div>
 
     <div class="section-block">
@@ -439,7 +468,7 @@ body{background:var(--bg);min-height:100vh}
       <div class="idea-body">
         <div class="idea-scale">The Series · Flagship, ongoing</div>
         <div class="idea-title">"On Call"</div>
-        <div class="idea-desc">Somewhere right now an engineer is having dinner with a laptop open next to the plate. A dashboard is green. Then it isn't. A page goes off, and the next hour decides whether millions of people notice.<br/><br/><em>On Call</em> embeds with the on-call engineer at one New Relic customer through a real stretch of the job: the quiet, the alert, the scramble, the fix, the postmortem the next morning. It's a documentary about the people who keep the software everyone uses from going down, and New Relic is the tool in their hands and the expert voice in the room, not the subject of the film.<br/><br/>You meet the engineer before the pager goes off. You watch the graph turn red. You're in the room at 2am while they trace it, and you stay for the quiet win when the numbers come back.<br/><br/><em>Drive to Survive (the Netflix series that made millions of people who'd never watched a race care about Formula 1 by following the drivers and the pit crews, not the cars)</em> is the same move. The engineers were always the story and the platform never was, and this keeps the camera on them.</div>
+        <div class="idea-desc">Somewhere right now an engineer is having dinner with a laptop open next to the plate. A dashboard is green. Then it isn't. A page goes off, and the next hour decides whether millions of people notice.<br/><br/><em>On Call</em> embeds with the on-call engineer at one New Relic customer through a real stretch of the job: the quiet, the alert, the scramble, the fix, the postmortem the next morning. It's a documentary about the people who keep the software everyone uses from going down, and New Relic is the tool in their hands and the expert voice in the room, not the subject of the film.<br/><br/>You meet the engineer before the pager goes off. You watch the graph turn red. You're in the room at 2am while they trace it, and you stay for the quiet win when the numbers come back.<br/><br/><em>Drive to Survive (the Netflix series that made millions of people who'd never watched a race care about Formula 1 by following the drivers and the pit crews, not the cars)</em> works the same way here. It keeps the camera on the engineers, not the software.</div>
         <div class="why-block">
           <div class="why-label">Why long-form episodic content wins long-term</div>
           <div class="why-list">
@@ -456,7 +485,7 @@ body{background:var(--bg);min-height:100vh}
       <div class="idea-body">
         <div class="idea-scale">A Single Film · one-time</div>
         <div class="idea-title">"Kept Running"</div>
-        <div class="idea-desc">There's no video anywhere on newrelic.com, and yet you're already sitting on one of the best stories in the business. You tell it in writing: the Domino's engineering team running golden signals and error budgets so that on the busiest pizza night of the year, the order button just works. Right now it's a case study people read, not a film they watch.<br/><br/><em>Kept Running</em> is one film rather than a series, three to five minutes, made for the homepage and the sales team. It's a single customer hero film built around one team keeping a service millions of people use from going down, with New Relic as the tool in their hands and the expert voice in the room, never the subject. One story, told all the way through, on camera.<br/><br/>A prospect lands on the site trying to decide whether observability is worth it. A few minutes later they've watched a real team survive the night that would have taken them down, and the value isn't a claim anymore, it's something they saw.<br/><br/>It's also the cleanest single project to start with. One customer, one shoot, one finished film that turns your strongest written case study into something people actually watch, and it gives the series above its first real proof of concept.</div>
+        <div class="idea-desc">New Relic already has one of the best stories in the business, and right now it lives in writing. The Domino's engineering team runs golden signals and error budgets so that on the busiest pizza night of the year, the order button just works. That story would land even harder on film.<br/><br/><em>Kept Running</em> is one film rather than a series, three to five minutes, made for the homepage and the sales team. It's a single customer hero film built around one team keeping a service millions of people use from going down, with New Relic as the tool in their hands and the expert voice in the room, never the subject. One story, told all the way through, on camera.<br/><br/>A prospect who is deciding whether observability is worth it watches a few minutes and sees a real team survive the night that would have taken them down. They don't have to take the claim on faith, because they watched it happen.<br/><br/>It's also the cleanest single project to start with. One customer, one shoot, one finished film that puts your strongest customer story on screen, and it gives the series above its first real proof of concept.</div>
         <div class="why-block">
           <div class="why-label">Why one film is worth making on its own</div>
           <div class="why-list">
@@ -501,12 +530,12 @@ body{background:var(--bg);min-height:100vh}
   <div class="section-block">
     <p>Legendeering is Talex's proprietary strategy. The core principle is straightforward: lead with value, always. The brand earns trust by giving without expectation, and that trust grows over time because people keep choosing to watch.</p>
     <p>Five directives drive it:</p>
-    <ul style="list-style:none;padding:0;margin:0.5rem 0 1rem">
-      <li style="position:relative;padding-left:16px;margin-bottom:7px;font-size:14px;line-height:1.7;color:var(--txt2)"><span style="position:absolute;left:4px;top:-1px;color:var(--o);font-weight:700;font-size:18px;line-height:1">·</span><strong style="color:var(--txt);font-weight:500">Give Without Expectation.</strong> Value delivered without strings. The kind of generosity that builds loyalty money cannot buy.</li>
-      <li style="position:relative;padding-left:16px;margin-bottom:7px;font-size:14px;line-height:1.7;color:var(--txt2)"><span style="position:absolute;left:4px;top:-1px;color:var(--o);font-weight:700;font-size:18px;line-height:1">·</span><strong style="color:var(--txt);font-weight:500">Be Relentlessly Authentic.</strong> Say true things. Show real work. Speak like a human being.</li>
-      <li style="position:relative;padding-left:16px;margin-bottom:7px;font-size:14px;line-height:1.7;color:var(--txt2)"><span style="position:absolute;left:4px;top:-1px;color:var(--o);font-weight:700;font-size:18px;line-height:1">·</span><strong style="color:var(--txt);font-weight:500">It's Not About You. It's About Them.</strong> The audience has to come first. It's all about their wants and needs and making something they will choose to watch.</li>
-      <li style="position:relative;padding-left:16px;margin-bottom:7px;font-size:14px;line-height:1.7;color:var(--txt2)"><span style="position:absolute;left:4px;top:-1px;color:var(--o);font-weight:700;font-size:18px;line-height:1">·</span><strong style="color:var(--txt);font-weight:500">Start With Story, Follow With Facts.</strong> Story gives information shape, context, and emotional weight. Facts alone rarely move people.</li>
-      <li style="position:relative;padding-left:16px;margin-bottom:7px;font-size:14px;line-height:1.7;color:var(--txt2)"><span style="position:absolute;left:4px;top:-1px;color:var(--o);font-weight:700;font-size:18px;line-height:1">·</span><strong style="color:var(--txt);font-weight:500">Consistency Is Key.</strong> Trust is built in moments, repeated over time.</li>
+    <ul class="dir-list">
+      <li class="dir-item"><span class="dir-icon"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></span><span><strong>Give Without Expectation.</strong> Value delivered without strings. The kind of generosity that builds loyalty money cannot buy.</span></li>
+      <li class="dir-item"><span class="dir-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M8 12l3 3 5-6"/></svg></span><span><strong>Be Relentlessly Authentic.</strong> Say true things. Show real work. Speak like a human being.</span></li>
+      <li class="dir-item"><span class="dir-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><strong>It's Not About You. It's About Them.</strong> The audience has to come first. It's all about their wants and needs and making something they will choose to watch.</span></li>
+      <li class="dir-item"><span class="dir-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><span><strong>Start With Story, Follow With Facts.</strong> Story gives information shape, context, and emotional weight. Facts alone rarely move people.</span></li>
+      <li class="dir-item"><span class="dir-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span><strong>Consistency Is Key.</strong> Trust is built in moments, repeated over time.</span></li>
     </ul>
     <p>New Relic knows observability and knows the engineers it serves. Talex would add the long-form video: documentary films and series built for the developer community you're speaking to. The three concepts above come straight out of this method, built for a company at your scale.</p>
   </div>
@@ -558,6 +587,9 @@ body{background:var(--bg);min-height:100vh}
       <div class="cs-section-label">The Result</div>
       <div class="cs-section-body">On December 15, 2025, the NY State Gaming Commission awarded Resorts World NYC one of only three downstate commercial gaming licenses. Talex Media's content supported one of the most consequential licensing decisions in NYC's recent history.</div>
     </div>
+    <div class="cs-video-embed">
+      <iframe src="https://player.vimeo.com/video/1197837461?h=b1f296a8c1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen loading="lazy" title="Resorts World NYC · Featured Video"></iframe>
+    </div>
     <div class="cs-footer-meta">NYC Gaming License Awarded Dec 15, 2025 · 10+ Videos Produced · $5.5B Investment · Spring 2026 Opening</div>
   </div>
 
@@ -590,6 +622,9 @@ body{background:var(--bg);min-height:100vh}
       <div class="cs-section-label">The Result</div>
       <div class="cs-section-body">Since the partnership began, Sobo & Sobo has grown from a NY-focused firm into a multi-state legal practice with offices in NY, CT, NJ, IL, OH, PA, and WI. Talex Media's campaigns have accompanied every stage of that expansion.</div>
     </div>
+    <div class="cs-video-embed">
+      <iframe src="https://player.vimeo.com/video/1197837545?h=26cd419847" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen loading="lazy" title="Sobo &amp; Sobo · Featured Video"></iframe>
+    </div>
     <div class="cs-footer-meta">5+ Year Partnership · All Commercial Campaigns · 7 States: NY, CT, NJ, IL, OH, PA, WI</div>
   </div>
 
@@ -621,6 +656,9 @@ body{background:var(--bg);min-height:100vh}
     <div class="cs-section">
       <div class="cs-section-label">The Result</div>
       <div class="cs-section-body">In August 2025, Elizabeth Seton Children's broke ground on their new 96-bed young adult center in White Plains, NY, the first standalone facility of its kind in the United States, providing care for young adults aged 18 to 35 with complex medical needs. The facility is expected to open in January 2028.</div>
+    </div>
+    <div class="cs-video-embed">
+      <iframe src="https://player.vimeo.com/video/1197837295?h=1a1b3c715b" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen loading="lazy" title="Elizabeth Seton Children's · Featured Video"></iframe>
     </div>
     <div class="cs-footer-meta">First standalone young adult complex-care facility in the U.S. · 96 beds · $156M · Groundbreaking Aug 2025</div>
   </div>
